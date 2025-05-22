@@ -1,73 +1,25 @@
-🦜 Conversational AI-Powered SQL Query Interface
-An interactive Streamlit-based web application that uses LangChain, LLaMA3 via Groq API, and SQLAlchemy to enable natural language interaction with SQL databases (SQLite & MySQL). Ask questions like "Show me all students in Data Science section A" and get answers in real-time.
+# 🦜 LangChain-Powered MySQL Chatbot using Streamlit & LLaMA3
 
-🚀 Features
-LLM-Powered Querying: Uses LLaMA3-8B-8192 model via Groq API to interpret and run SQL queries from natural language.
+This project is an intelligent, interactive chatbot built with **Streamlit**, **LangChain**, and **LLaMA3 (Groq API)** that enables users to run **natural language queries** directly on a **MySQL database**.
 
-Dual Database Support: Seamlessly switch between a local SQLite3 (student.db) and remote MySQL database via UI.
+---
 
-Streamlit Interface: Intuitive web UI for chat-based interaction and real-time responses.
+## 🚀 Features
 
-SQLDatabaseToolkit Integration: Efficient execution and handling of SQL logic using LangChain tools.
+- 🧠 **LLM Integration**: Uses `LLaMA3-8B-8192` via Groq API for intelligent SQL query generation.
+- 🗄️ **MySQL Support**: Connect to any custom MySQL database by entering credentials in the UI.
+- 💬 **Natural Language Interface**: Ask questions like _“What is the total revenue in Q1?”_ instead of writing SQL.
+- 🔄 **Streaming Response**: Uses LangChain’s streaming capabilities for real-time feedback.
+- 🔒 **Secure Inputs**: API keys and credentials entered securely in the sidebar.
+- 🧰 **LangChain Agent Toolkit**: Zero-shot agent handles complex multi-step reasoning and SQL generation.
 
-Session Management: Maintains chat history with a "Clear history" option.
+---
 
-Safe & Configurable: Inputs are protected and database access is read-only for SQLite.
+## 🧱 Tech Stack
 
-🧱 Tech Stack
-Frontend: Streamlit
+- **Frontend**: Streamlit
+- **Backend**: Python, LangChain, SQLAlchemy
+- **LLM**: LLaMA3-8B-8192 via Groq
+- **Database**: MySQL
 
-Backend: Python, LangChain, SQLAlchemy
-
-LLM: LLaMA3-8B-8192 via Groq
-
-Databases: SQLite3 (student.db) and MySQL
-
-🗂 Project Structure
-bash
-Copy
-Edit
-📁 your-project/
-│
-├── app.py             # Main Streamlit app
-├── sqlite.py          # Script to create and populate sample student.db
-├── student.db         # Sample SQLite3 database
-🛠 Setup Instructions
-Clone the repository:
-
-bash
-Copy
-Edit
-git clone https://github.com/AdityaBansal0123/CHAT_WITH_SQL_DATABASE.git
-cd CHAT_WITH_SQL_DATABASE
-Install dependencies:
-
-nginx
-Copy
-Edit
-pip install -r requirements.txt
-Create and populate SQLite DB (optional):
-
-nginx
-Copy
-Edit
-python sqlite.py
-Run the Streamlit app:
-
-arduino
-Copy
-Edit
-streamlit run app.py
-Provide your Groq API Key and database credentials in the sidebar UI.
-
-🧪 Example Queries
-Show all students from section A
-
-What is the average mark in Data Science?
-
-List students with marks above 80
-
-🔐 Security Notes
-MySQL credentials and Groq API key are entered via sidebar and not hard-coded.
-
-SQLite database is opened in read-only mode to prevent unwanted writes or deletions.
+---
