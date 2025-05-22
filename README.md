@@ -38,8 +38,8 @@ Clone the repository:
 bash
 Copy
 Edit
-git clone https://github.com/yourusername/your-repo-name.git
-cd your-repo-name
+git clone https://github.com/AdityaBansal0123/CHAT_WITH_SQL_DATABASE.git
+cd CHAT_WITH_SQL_DATABASE
 Install dependencies:
 
 nginx
